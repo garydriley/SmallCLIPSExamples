@@ -9,6 +9,26 @@
 
 ;;; Sample Run 
 ;;;
+;;; CLIPS> (load "rpssl.clp")
+;;; %%%$*******
+;;; TRUE
+;;; CLIPS> (reset)
+;;; CLIPS> (run)
+;;; Rock Paper Scissors Spock Lizard
+;;; Choose or quit: rock
+;;; Rock crushes lizard!
+;;; Choose or quit: paper
+;;; Lizard eats paper!
+;;; Choose or quit: scissors
+;;; Rock crushes scissors!
+;;; Choose or quit: spock
+;;; Spock vaporizes rock!
+;;; Choose or quit: lizard
+;;; Lizard poisons Spock!
+;;; Choose or quit: quit
+;;; Games played: 5.
+;;; I won 2. You won 3.
+;;; CLIPS> 
 
 (deftemplate wins
    (slot player (allowed-values me you ties))
